@@ -89,7 +89,7 @@
                 <div class="col-6">
                     <div class="card-banner"></div>
                     <div class="d-flex img-banner">
-                        <img src="./img/burguer.png" />>
+                        <img src="./img/burguer.png" />
                     </div> 
                     <div class="card card-case">
                         "Entrega rápida e funcionários simpáticos.
@@ -459,7 +459,7 @@
                     </div>
 
                 </div>
-                <div id="resumoCarrinho" class="row mr-0 ml-0">
+                <div id="resumoCarrinho" class="row mr-0 ml-0 hidden">
                     <div class="col-12">
                         <p class="title-carrinho mt-4">
                             <b>Itens do pedido:</b>
@@ -526,10 +526,10 @@
                     </p>
                 </div>
 
-                <a class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</a>
-                <a class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar pedido</a>
+                <a onclick="cardapio.metodos.carregarEtapa(2)" class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</a>
+                <a onclick="cardapio.metodos.carregarEtapa(3)" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar pedido</a>
                 <a class="btn btn-yellow float-right hidden" id="btnEtapaResumo">Enviar Pedido</a>
-                <a class="btn btn-white float-right mr-3 hidden" id="btnEtapaResumo">Voltar</a>
+                <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">Voltar</a>
             </div>
         </div>
     </div>
